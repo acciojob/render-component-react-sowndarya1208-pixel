@@ -1,14 +1,11 @@
 import React from "react";
-import { createRoot } from "react-dom/client";
+import ReactDOM from "react-dom";
 import App from "./components/App";
 
-// Grab the root div
-const rootElement = document.getElementById("root");
-const root = createRoot(rootElement);
-
-// Render the App component
-root.render(
+// Use React 17 rendering
+ReactDOM.render(
   <React.StrictMode>
     <App />
-  </React.StrictMode>
+  </React.StrictMode>,
+  document.getElementById("root")
 );
