@@ -1,13 +1,9 @@
-import React, { useState } from "react";
-import ButtonCounter from "./ButtonCounter";
+import React from "react";
 
 const App = () => {
-  const [message, setMessage] = useState("Welcome to Render Component React!");
-
   return (
-    <div style={{ textAlign: "center", marginTop: "50px" }}>
-      <h1>{message}</h1>
-      <ButtonCounter />
+    <div>
+      <p>I am learning React. My life is getting better.</p>
     </div>
   );
 };
