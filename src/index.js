@@ -1,11 +1,14 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import { createRoot } from "react-dom/client";
 import App from "./components/App";
 
+// Grab the root div
+const rootElement = document.getElementById("root");
+const root = createRoot(rootElement);
 
-
-// Create root and render
-const root = ReactDOM.createRoot(rootElement);
-root.render(<App />);
-
-
+// Render the App component
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
